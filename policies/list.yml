@@ -1,0 +1,31 @@
+# List of policies
+
+constitution:
+  name: The Mana World Collective (TMWC)
+  description: Constitution of The Mana World
+  aliases:
+  - TMWC
+  - TMWT
+
+game-rules:
+  name: Game Rules
+  description: Rules observed in-game
+  aliases:
+  - rules
+
+forum-rules:
+  name: Forum Rules
+  description: Rules observed in-game
+
+social-convention:
+  name: TMW Social Convention (TSC)
+  description: Guidelines for social interaction
+  aliases:
+  - TSC
+  - ESC
+
+.privacy-policy:
+  name: Privacy Policy
+  description: How we handle your data
+  aliases:
+  - privacy
