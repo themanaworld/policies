@@ -25,14 +25,15 @@ const index = {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Mana World Policies</title>
 	<meta name="description" content="Active policies on The Mana World">
-	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="style.css">
 	<link rel="canonical" href="https://policies.themanaworld.org/">
 </head>
 <body>
+<main>
 <nav>
 <h1>TMW Policies</h1>
 <ul>
-`.trim(), list: "", suffix: "</ul></nav>\n</body>\n</html>"
+`.trim(), list: "", suffix: "</ul>\n</nav>\n</main>\n</body>\n</html>"
 };
 
 // the _redirects file used by netlify
@@ -86,20 +87,23 @@ for (const [file, props] of Object.entries(policies)) {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Mana World – ${props.name}</title>
 	<meta name="description" content="${props.description}">
-	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="../style.css">
 	<link rel="canonical" href="https://policies.themanaworld.org/${file}">
 </head>
 <body>
 <article>
 ${html}
 </article>
+<footer>Copyright &copy The Mana World &mdash; Generated on ${(new Date()).toISOString()}</footer>
 </body>
 </html>
 `.trim());
 
 	// create a subdirectory for it
 	await Deno.mkdir(`build/${file}`, {recursive: true});
-	await Deno.writeFile(`build/${file}/index.html`, policyPage, {create: true});
+    await Deno.writeFile(`build/${file}/index.html`, policyPage, {create: true});
+    await Deno.mkdir(`build/${file}/raw`, {recursive: true});
+    await Deno.writeFile(`build/${file}/raw/index.html`, encoder.encode(html), {create: true});
 }
 
 // write the index page
