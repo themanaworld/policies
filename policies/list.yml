@@ -15,7 +15,7 @@ game-rules:
 
 forum-rules:
   name: Forum Rules
-  description: Rules observed in-game
+  description: Rules observed on the forums
 
 social-convention:
   name: TMW Social Convention (TSC)
