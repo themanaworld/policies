@@ -1,20 +1,16 @@
 import { Marked } from "https://deno.land/x/markdown/mod.ts"
 import * as yaml from "https://deno.land/x/js_yaml_port/js-yaml.js"
 
-// the structure of policies/list.yml
-interface policyList {
-	[file: string]: {
-		name: string;
-		description: string;
-		aliases?: string[];
-	};
+// the structure of the front matter
+interface PolicyYFM {
+	name: string
+	description: string;
+	aliases?: string[];
+	ignore?: boolean;
 }
 
 const decoder = new TextDecoder("utf-8");
 const encoder = new TextEncoder();
-const policyFile = "policies/list.yml";
-const rawPolicies = decoder.decode(await Deno.readFile(policyFile));
-const policies: policyList = yaml.load(rawPolicies);
 
 const index = {
 	prefix: `
@@ -44,51 +40,80 @@ console.info(">> Building the static site...");
 // empty the build directory
 await Deno.remove("build", { recursive: true });
 
-// loop through every policy markdown file
-for (const [file, props] of Object.entries(policies)) {
-	if (file.startsWith(".")) {
-		console.log(`Ignoring disabled policy file: ${file}.md`);
+// loop through policy files
+for await (const dirEntry of Deno.readDir("policies")) {
+	const file = dirEntry.name;
+	const rawPolicy = decoder.decode(await Deno.readFile(`policies/${file}`));
+
+	if (!rawPolicy.trimStart().startsWith("---")) {
+		console.log(`Ignoring policy file with no front matter: ${file}`);
+		continue;
+	}
+
+	// find the closing tag
+	const endFrontMatter = rawPolicy.slice(3).indexOf("---");
+
+	if (endFrontMatter === -1) {
+		throw new SyntaxError(`Couldn't find end of front matter in ${file}`);
+	}
+
+	// mark the boundaries
+	const rawYAML = rawPolicy.slice(3, endFrontMatter + 3).trim();
+	const rawBody = rawPolicy.slice(3 + endFrontMatter + 3).trim();
+
+	const [shortName, type] = file.split(".");
+
+	if (type.toLowerCase() !== "md") {
+		console.log(`Unsupported policy file format: ${file}`);
+		continue;
+	}
+
+	// parse the front matter as yaml
+	const YFM: PolicyYFM = yaml.safeLoad(rawYAML, {filename: file});
+
+	if (Reflect.has(YFM, "ignore") || file.startsWith(".")) {
+		console.log(`Ignoring disabled policy file: ${file}`);
 		continue;
 	}
 
 	// add to the index page
-	index.list += `<li><a href="/${file}" title="${props.description}" aria-label="${props.description}">${props.name}</a></li>\n`;
+	index.list += `<li><a href="/${shortName}" title="${YFM.description}" aria-label="${YFM.description}">${YFM.name}</a></li>\n`;
 
 	// add to the netlify redirect file
-	redirects += `/${file} /${file}/index.html 200!\n`;
-
+	redirects += `/${shortName} /${shortName}/index.html 200!\n`;
+	
 	// built-in aliases
-	if (file != file.replace("-", "_")) {
-		redirects += `/${file.replace("-", "_")} /${file} 302\n`;
-	} if (file != file.replace("-", "")) {
-		redirects += `/${file.replace("-", "")} /${file} 302\n`;
+	if (shortName != shortName.replace("-", "_")) {
+		redirects += `/${shortName.replace("-", "_")} /${shortName} 302\n`;
+	} if (shortName != shortName.replace("-", "")) {
+		redirects += `/${shortName.replace("-", "")} /${shortName} 302\n`;
 	}
-
+	
 	// process path aliases
-	if (Reflect.has(props, "aliases")) {
-		for (const alias of props.aliases as string[]) {
-			redirects += `/${alias} /${file} 302\n`;
+	if (Reflect.has(YFM, "aliases")) {
+		for (const alias of YFM.aliases as string[]) {
+			redirects += `/${alias} /${shortName} 302\n`;
 
 			if (alias != alias.toLowerCase()) {
-				redirects += `/${alias.toLocaleLowerCase()} /${file} 302\n`;
+				redirects += `/${alias.toLocaleLowerCase()} /${shortName} 302\n`;
 			}
 		}
 	}
 
 	// convert from markdown to html
-	const markdown = decoder.decode(await Deno.readFile(`policies/${file}.md`));
-	const html: string = Marked.parse(markdown);
-	// wrap the generated html with our template
+	const html: string = Marked.parse(rawBody);
+
+	// wrap the generated html inside our template
 	const policyPage = encoder.encode(`
 <!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Mana World – ${props.name}</title>
-	<meta name="description" content="${props.description}">
+	<title>The Mana World – ${YFM.name}</title>
+	<meta name="description" content="${YFM.description}">
 	<link rel="stylesheet" href="../style.css">
-	<link rel="canonical" href="https://policies.themanaworld.org/${file}">
+	<link rel="canonical" href="https://policies.themanaworld.org/${shortName}">
 </head>
 <body>
 <article>
@@ -100,10 +125,10 @@ ${html}
 `.trim());
 
 	// create a subdirectory for it
-	await Deno.mkdir(`build/${file}`, {recursive: true});
-    await Deno.writeFile(`build/${file}/index.html`, policyPage, {create: true});
-    await Deno.mkdir(`build/${file}/raw`, {recursive: true});
-    await Deno.writeFile(`build/${file}/raw/index.html`, encoder.encode(html), {create: true});
+	await Deno.mkdir(`build/${shortName}`, {recursive: true});
+	await Deno.writeFile(`build/${shortName}/index.html`, policyPage, {create: true});
+	await Deno.mkdir(`build/${shortName}/raw`, {recursive: true});
+	await Deno.writeFile(`build/${shortName}/raw/index.html`, encoder.encode(html), {create: true});
 }
 
 // write the index page

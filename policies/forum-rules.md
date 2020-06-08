@@ -1,3 +1,8 @@
+---
+name: Forum Rules
+description: Rules observed on the forums
+---
+
 # Forum Rules
 
 ## Do not use offensive/rude language

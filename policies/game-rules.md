@@ -1,3 +1,9 @@
+---
+name: Game Rules
+description: Rules observed in-game
+aliases: [rules]
+---
+
 # Game Rules
 
 ## Do not AFK bot

@@ -1,3 +1,9 @@
+---
+name: The Mana World Team (TMWT)
+description: Constitution of The Mana World
+aliases: [TMWC, TMWT]
+---
+
 # The Mana World Team (TMWT)
 
 ## Abstract

@@ -1,3 +1,9 @@
+---
+name: TMW Social Convention (TSC)
+description: Guidelines for social interaction
+aliases: [TSC, ESC]
+---
+
 # TMW Social Convention (TSC)
 This page lists a minimum set of guidelines for social interaction on The Mana World and other MMOs.
 These guidelines can be used by any MMO game.
