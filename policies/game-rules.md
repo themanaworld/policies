@@ -2,6 +2,10 @@
 name: Game Rules
 description: Rules observed in-game
 aliases: [rules]
+
+autoupdate:
+  forums: {forum: 1, topic: 2922, post: 25061}
+  wiki: Game_Rules
 ---
 
 # Game Rules

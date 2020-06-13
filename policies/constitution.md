@@ -2,6 +2,10 @@
 name: The Mana World Team (TMWT)
 description: Constitution of The Mana World
 aliases: [TMWC, TMWT]
+
+autoupdate:
+  forums: {forum: 1, topic: 17166, post: 132138}
+  wiki: TMW_Team
 ---
 
 # The Mana World Team (TMWT)
