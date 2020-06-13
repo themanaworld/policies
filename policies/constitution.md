@@ -10,7 +10,7 @@ aliases: [TMWC, TMWT]
 ### Duties
 - The purpose of the TMWT is to make or delegate decisions regarding the running of The Mana World (TMW).
 - There are different scopes under TMWT's authority in order to balance and separate the projects responsibility and management.
-- TMWT understands that all members are here to help each other fulfill the common vision of making a Open Source 2D MMORPG.
+- TMWT understands that all members are here to help each other fulfil the common vision of making a Open Source 2D MMORPG.
 - Someone can hold part or all of a role and not be a TMWT member, but they need to have the required knowledge or experience to fulfill that role.
 - To become a TMWT member, you need to gain in membership in the one of the following categories of contributors; Game Master,Server Admin, or Developer and must be approved by a majority of TMWT.
 - In the event that no TMWT remain, but roles are fulfilled by non-TMWT members. Those members may assume TMWT title to fulfill TMWT's duties to their best ability.
@@ -20,6 +20,11 @@ aliases: [TMWC, TMWT]
 - Changes to TMWT governance and/or Organization
 - Changes to Game, Forum, Etiquette and Wiki rule changes. (not guidelines)
 - Voting a member into TMWT or to adviser status or to revoke membership or ban a member.
+
+### How to conduct a TMWT vote
+- A poll must be opened in the "TMW Team" private section of the forums (https://forums.themanaworld.org/).
+- The poll will allow re-voting and a running time will be set for 7 days.
+- If it is deemed appropriate, the length of the poll can be reduced to a minimum of 3 days or increased to a maximum of 14 days. Any TMW Team member can object to this in the poll's discussion thread, in which case the running time must revert to the standard 7 days.
 
 ### Membership
 - If a member becomes inactive (stops) in their contributions for a period longer than 1 year, they will be moved to adviser status.
@@ -50,7 +55,7 @@ aliases: [TMWC, TMWT]
 - Programmers are responsible for making changes to the code base.
 - Content Creators are responsible for adding quests, items and monsters either via scripting, mapping, sound, client theme or pixel art.
 - Web developers are responsible for the website's front and/or back-end work.
-- Translators work on client,server and wiki data to provide them in as many languages as we can.
+- Translators work on client, server and wiki data to provide them in as many languages as we can.
 - Developer group maintains a visible project plan.
 - To become a member of this group, a person must show appropriate knowledge, contribute to the project and learn and gain 'git' access.
 
