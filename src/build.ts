@@ -3,10 +3,18 @@ import * as yaml from "https://deno.land/x/js_yaml_port/js-yaml.js"
 
 // the structure of the front matter
 interface PolicyYFM {
-	name: string
+	name: string;
 	description: string;
 	aliases?: string[];
-	ignore?: boolean;
+    ignore?: boolean;
+    autoupdate?: {
+        forums?: {
+            forum?: number;
+            topic?: number;
+            post: number;
+        };
+        wiki?: string;
+    };
 }
 
 const decoder = new TextDecoder("utf-8");
