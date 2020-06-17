@@ -6,15 +6,15 @@ interface PolicyYFM {
 	name: string;
 	description: string;
 	aliases?: string[];
-    ignore?: boolean;
-    autoupdate?: {
-        forums?: {
-            forum?: number;
-            topic?: number;
-            post: number;
-        };
-        wiki?: string;
-    };
+	ignore?: boolean;
+	autoupdate?: {
+		forums?: {
+			forum?: number;
+			topic?: number;
+			post: number;
+		};
+		wiki?: string;
+	};
 }
 
 const decoder = new TextDecoder("utf-8");
@@ -89,14 +89,14 @@ for await (const dirEntry of Deno.readDir("policies")) {
 
 	// add to the netlify redirect file
 	redirects += `/${shortName} /${shortName}/index.html 200!\n`;
-	
+
 	// built-in aliases
 	if (shortName != shortName.replace("-", "_")) {
 		redirects += `/${shortName.replace("-", "_")} /${shortName} 302\n`;
 	} if (shortName != shortName.replace("-", "")) {
 		redirects += `/${shortName.replace("-", "")} /${shortName} 302\n`;
 	}
-	
+
 	// process path aliases
 	if (Reflect.has(YFM, "aliases")) {
 		for (const alias of YFM.aliases as string[]) {
