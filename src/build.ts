@@ -1,5 +1,4 @@
 import { Marked } from "https://deno.land/x/markdown/mod.ts"
-import * as yaml from "https://deno.land/x/js_yaml_port/js-yaml.js"
 
 // the structure of the front matter
 interface PolicyYFM {
@@ -51,24 +50,6 @@ await Deno.remove("build", { recursive: true });
 // loop through policy files
 for await (const dirEntry of Deno.readDir("policies")) {
 	const file = dirEntry.name;
-	const rawPolicy = decoder.decode(await Deno.readFile(`policies/${file}`));
-
-	if (!rawPolicy.trimStart().startsWith("---")) {
-		console.log(`Ignoring policy file with no front matter: ${file}`);
-		continue;
-	}
-
-	// find the closing tag
-	const endFrontMatter = rawPolicy.slice(3).indexOf("---");
-
-	if (endFrontMatter === -1) {
-		throw new SyntaxError(`Couldn't find end of front matter in ${file}`);
-	}
-
-	// mark the boundaries
-	const rawYAML = rawPolicy.slice(3, endFrontMatter + 3).trim();
-	const rawBody = rawPolicy.slice(3 + endFrontMatter + 3).trim();
-
 	const [shortName, type] = file.split(".");
 
 	if (type.toLowerCase() !== "md") {
@@ -76,8 +57,15 @@ for await (const dirEntry of Deno.readDir("policies")) {
 		continue;
 	}
 
-	// parse the front matter as yaml
-	const YFM: PolicyYFM = yaml.safeLoad(rawYAML, {filename: file});
+	const rawPolicy = decoder.decode(await Deno.readFile(`policies/${file}`));
+
+	if (!rawPolicy.trimStart().startsWith("---")) {
+		console.log(`Ignoring policy file with no front matter: ${file}`);
+		continue;
+	}
+
+	// parse front matter and markdown:
+	const {content: html, meta: YFM} = Marked.parse(rawPolicy);
 
 	if (Reflect.has(YFM, "ignore") || file.startsWith(".")) {
 		console.log(`Ignoring disabled policy file: ${file}`);
@@ -107,9 +95,6 @@ for await (const dirEntry of Deno.readDir("policies")) {
 			}
 		}
 	}
-
-	// convert from markdown to html
-	const html: string = Marked.parse(rawBody);
 
 	// wrap the generated html inside our template
 	const policyPage = encoder.encode(`
