@@ -1,18 +1,21 @@
 import { Marked } from "https://deno.land/x/markdown/mod.ts"
 
-// the structure of the front matter
+/** references a forum post */
+type ForumEntry = {
+	forum?: number;
+	topic?: number;
+	post: number;
+} | number;
+
+/** the structure of the front matter */
 interface PolicyYFM {
 	name: string;
 	description: string;
 	aliases?: string[];
 	ignore?: boolean;
 	autoupdate?: {
-		forums?: {
-			forum?: number;
-			topic?: number;
-			post: number;
-		};
-		wiki?: string;
+		forums?: ForumEntry | ForumEntry[];
+		wiki?: string | string[];
 	};
 }
 
