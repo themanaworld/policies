@@ -46,3 +46,6 @@ content
 ```sh
 make build
 ```
+
+## Instant prototyping [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-click_to_open-blue?logo=gitpod)](https://gitpod.io/#https://gitlab.com/evol/policies)
+Click the badge to launch a pre-configured online IDE

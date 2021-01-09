@@ -1,0 +1,14 @@
+tasks:
+  - before: make deno
+    init: make
+    # docs: https://browsersync.io/docs/command-line
+    command: npx browser-sync start --server build --files build --port 8080 --no-ui --no-notify --open "gp preview $(gp url 8080)"
+
+ports:
+  - port: 8080
+    visibility: private
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - denoland.vscode-deno

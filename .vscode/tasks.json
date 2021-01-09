@@ -1,0 +1,51 @@
+{
+// See https://go.microsoft.com/fwlink/?LinkId=733558
+// for the documentation about the tasks.json format
+"version": "2.0.0",
+"tasks": [
+	{
+		"label": "open preview",
+		"type": "shell",
+		"command": "gp preview $(gp url 8080)",
+		"group": "test",
+		"presentation": {
+			"reveal": "never",
+			"panel": "shared"
+		},
+		"problemMatcher": []
+	},
+	{
+		"label": "launch server",
+		"type": "shell",
+		"command": "npx browser-sync start --server build --files build --port 8080 --no-ui --no-notify --open \"gp preview $(gp url 8080)\"",
+		"group": "none",
+		"presentation": {
+			"reveal": "never",
+			"panel": "shared"
+		},
+		"problemMatcher": []
+	},
+	{
+		"label": "install Deno",
+		"type": "shell",
+		"command": "make deno",
+		"group": "none",
+		"presentation": {
+			"reveal": "silent",
+			"panel": "shared"
+		},
+		"problemMatcher": []
+	},
+	{
+		"label": "generate static site",
+		"type": "shell",
+		"command": "make",
+		"group": "build",
+		"presentation": {
+			"reveal": "silent",
+			"panel": "shared"
+		},
+		"problemMatcher": []
+	}
+]
+}
