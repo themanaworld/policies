@@ -1,7 +1,7 @@
 ---
 name: The Mana World Team (TMWT)
 description: Constitution of The Mana World
-aliases: [TMWC, TMWT, organization, organisation, org]
+aliases: [TMWC, TMWT, team, tmw_team, committee, tmw_committee, collective, tmw_collective, organization, organisation, org]
 
 autoupdate:
   forums: {forum: 1, topic: 17166, post: 132138}

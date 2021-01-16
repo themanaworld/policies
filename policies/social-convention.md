@@ -1,7 +1,7 @@
 ---
 name: TMW Social Convention (TSC)
 description: Guidelines for social interaction
-aliases: [TSC, ESC]
+aliases: [TSC, ESC, social, convention, tmw-social-convention, evol-social-convention]
 
 autoupdate:
   wiki: TMW_Social_Convention

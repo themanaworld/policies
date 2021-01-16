@@ -1,6 +1,7 @@
 ---
 name: Forum Rules
 description: Rules observed on the forums
+aliases: [forum, forums]
 
 autoupdate:
   forums: {forum: 1, topic: 2922, post: 25061}

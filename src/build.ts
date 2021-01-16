@@ -22,6 +22,7 @@ interface PolicyYFM {
 const decoder = new TextDecoder("utf-8");
 const encoder = new TextEncoder();
 
+/** the source of the index page */
 const index = {
 	prefix: `
 <!doctype html>
@@ -42,8 +43,13 @@ const index = {
 `.trim(), list: "", suffix: "</ul>\n</nav>\n</main>\n</body>\n</html>"
 };
 
-// the _redirects file used by netlify
-let redirects = "";
+/** the _redirects file used by netlify */
+let _redirects = "";
+/** the [routes] portion of the yaml file used by Render */
+let render_yaml = "";
+
+/** a map of all generated path aliases */
+const routes: Map<string, Set<string>> = new Map();
 
 console.info(">> Building the static site...");
 
@@ -52,7 +58,7 @@ await Deno.remove("build", { recursive: true });
 
 // loop through policy files
 for await (const dirEntry of Deno.readDir("policies")) {
-	const file = dirEntry.name;
+	const file: string = dirEntry.name;
 	const [shortName, type] = file.split(".");
 
 	if (type.toLowerCase() !== "md") {
@@ -79,25 +85,49 @@ for await (const dirEntry of Deno.readDir("policies")) {
 	index.list += `<li><a href="/${shortName}" title="${YFM.description}" aria-label="${YFM.description}">${YFM.name}</a></li>\n`;
 
 	// add to the netlify redirect file
-	redirects += `/${shortName} /${shortName}/index.html 200!\n`;
+	_redirects += `/${shortName} /${shortName}/index.html 200!\n`;
+
+	/** a Set<string> of all aliases for this policy */
+	const aliases: Set<string> = new Set(Reflect.has(YFM, "aliases") ? YFM.aliases : []);
+
+	/** generates aliases from common path substitutions */
+	const generateCommonAliases = (path: string) => {
+		const substitutions = [
+			["-", "_"],
+			["_", "-"],
+			["-"],
+			["_"],
+		];
+
+		for (const substitution of substitutions) {
+			const replacement = path.replace(substitution[0], substitution[1] ?? "");
+			aliases.add(replacement);
+			aliases.add(replacement.toLowerCase());
+		}
+
+		// lower case
+		aliases.add(path.toLowerCase());
+	};
 
 	// built-in aliases
-	if (shortName != shortName.replace("-", "_")) {
-		redirects += `/${shortName.replace("-", "_")} /${shortName} 302\n`;
-	} if (shortName != shortName.replace("-", "")) {
-		redirects += `/${shortName.replace("-", "")} /${shortName} 302\n`;
+	generateCommonAliases(shortName);
+
+	// process path aliases (and duplicate before iterating)
+	for (const alias of new Set(aliases)) {
+		generateCommonAliases(alias);
 	}
 
-	// process path aliases
-	if (Reflect.has(YFM, "aliases")) {
-		for (const alias of YFM.aliases as string[]) {
-			redirects += `/${alias} /${shortName} 302\n`;
+	// make sure we don't include the article itself in its alias Set
+	aliases.delete(shortName);
 
-			if (alias != alias.toLowerCase()) {
-				redirects += `/${alias.toLocaleLowerCase()} /${shortName} 302\n`;
-			}
-		}
+	// add all aliases to the netlify _redirects file and the Render yaml file
+	for (const alias of aliases) {
+		_redirects += `/${alias} /${shortName} 302\n`
+		render_yaml += `- type: redirect\n  source: /${alias}\n  destination: /${shortName}\n`;
 	}
+
+	// record the aliases in the global routes map
+	routes.set(shortName, aliases);
 
 	// wrap the generated html inside our template
 	const policyPage = encoder.encode(`
@@ -132,7 +162,17 @@ const indexPage = encoder.encode(index.prefix + index.list + index.suffix);
 await Deno.writeFile("build/index.html", indexPage, {create: true});
 
 // write the _redirects file (netlify)
-await Deno.writeFile("build/_redirects", encoder.encode(redirects), {create: true});
+await Deno.writeFile("build/_redirects", encoder.encode(_redirects), {create: true});
+
+// write the render.yaml file (render)
+await Deno.writeFile("build/render.yaml", encoder.encode(render_yaml), {create: true});
+
+// write the routes.json file (generic)
+const routes_obj: any = {};
+for (const [route, aliases] of routes) {
+	routes_obj[route] = [...aliases]; // convert the Map
+}
+await Deno.writeFile("build/routes.json", encoder.encode(JSON.stringify(routes_obj)), {create: true});
 
 // copy static assets
 for await (const dirEntry of Deno.readDir("src/static")) {
