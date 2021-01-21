@@ -79,11 +79,11 @@ These groups are closely affiliated with TMWT and TMW as an organisation, but ar
 - No longer actively contribute.
 - Allowed to vote/post as TMWT.
 
-### Community Managers
-- Server Admins may appoint Community Managers to manage social media accounts ("communities") on behalf of The Mana World.
-- Each sub-project may have its own social media accounts and appoint its own Community Managers.
-- Community Managers do not automatically inherit TMWT membership.
-- Community Managers may appoint and supervise lower-ranking moderators to assist them in managing a community.
+### Social Media Managers
+- TMWT may appoint by [Consensus](https://wiki.themanaworld.org/index.php/Consensus) Social Media Managers to manage social media accounts ("communities") on behalf of The Mana World.
+- Each sub-project may have its own social media accounts and appoint its own Social Media Managers.
+- Social Media Managers do not automatically inherit TMWT membership.
+- Social Media Managers may appoint and supervise lower-ranking moderators to assist them in managing a community.
 
 <!-- The section below only contains links to relevant user groups and is not part of the constitution -->
 <br><hr>
