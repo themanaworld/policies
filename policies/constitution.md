@@ -90,7 +90,7 @@ These groups are closely affiliated with TMWT and TMW as an organisation, but ar
 
 ## Members
 - [The Mana World Team](https://forums.themanaworld.org/memberlist.php?mode=group&g=981)
-  - [Administrators](https://forums.themanaworld.org/memberlist.php?mode=group&g=962)
+  - [Administrators](https://forums.themanaworld.org/memberlist.php?mode=group&g=994)
   - [Developers](https://forums.themanaworld.org/memberlist.php?mode=group&g=979)
   - [Game Masters](https://forums.themanaworld.org/memberlist.php?mode=group&g=973)
 - [The Mana World Advisers](https://forums.themanaworld.org/memberlist.php?mode=group&g=984)
