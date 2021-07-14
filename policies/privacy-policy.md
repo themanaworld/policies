@@ -7,6 +7,8 @@ autoupdate:
   wiki: The_Mana_World:Privacy_Policy
 ---
 
+# Privacy Policy
+
 This is the general Privacy Policy for The Mana World Project ("we", "us"), along
 all its services, including websites, forums, wikis, repositories and game servers;
 Containing information regarding the types of information that is collected and
@@ -29,21 +31,22 @@ Internet Protocol (IP) address, browser or client type, Internet Service Provide
 our services from Denial of Service (DoS) attacks, to find and prevent fraud, to
 analyze trends, and to better administer and maintain our services.
 
-Some of our services which are used in conjunction of other service, such as IRC
-Bots used in conjunction of IRC, or game bots used in conjunction of the game, may
-further log timestamps for the last seen of nicknames or hold private messages for
-users. Typically, these will be using the same permission scopes which a regular
-user of the IRC Network and/or game would be have access to. Typically, these
-sub-services do not enjoy any additional data collection privileges apart being
-optionally exempt from some anti-flooding policies and being under our direct
-control in case of the need for assistance regarding their usage.
+Some of our services which are used in conjunction with other service, such as IRC
+Bots used in conjunction with IRC, or game bots used in conjunction of the game,
+may further log timestamps for the last seen of nicknames or hold private
+messages for users. Typically, these will be using the same permission scopes
+which a regular user of the IRC Network and/or game would be have access to.
+Typically, these sub-services do not enjoy any additional data collection
+privileges apart from being optionally exempt from some anti-flooding policies and
+being under our direct control in case of the need for assistance regarding their
+usage.
 
-Our services typically offer the users "accounts", which they may register provided
-your consent and acceptance of this Privacy Policy and our terms of use.
+Our services typically offer the users "accounts", which they may register
+provided your consent and acceptance of this Privacy Policy and our terms of use.
 
 Do note that some services like repositories, wikis and forums may collect data
 subject to the DMCA under an irrevocable license terms, such as the GNU General
-Public License version 2 or later. This Privacy Policy does not superseed nor
+Public License version 2 or later. This Privacy Policy does not supersede nor
 prevail over the license terms, except when required by law.
 
 ### Information TMW Forums collect
@@ -56,8 +59,8 @@ Creating an account will prompt the creation of defaults and storing of further
 personal data automatically, such as registration date and IP, logs on the actions
 performed within the forums, language, forum theme, timezone, date format, posting
 preferences, display options and team memberships. They are stored to provide you
-functionality, to improve and personalize your user experience, to communicate with
-you, and to find and prevent fraud.
+functionality, to improve and personalize your user experience, to communicate
+with you, and to find and prevent fraud.
 
 When registering or posting in our forums, we may share your username, email and/or
 IP address with privacy-respecting third-parties in order to protect our website
@@ -265,6 +268,6 @@ For data requests, or to exercise a right which is not available on the interfac
 please use instead
 data@themanaworld.org
 
-This Privacy Policy does not superseed the [Terms of Use](/tos) are is subject to
+This Privacy Policy does not supersede the [Terms of Use](/tos) and is subject to
 it.
 
