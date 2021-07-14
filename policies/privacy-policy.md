@@ -104,15 +104,19 @@ agreement than this one.
 ### Information TMW Vault collects
 
 The Mana World Vault collects registration date, IP, email, a hashed password, any
-two factor authentication secret, credentials for game accounts, ban state,
-settings and variables from multiple worlds, which may or may not be controlled by
-The Mana World Team.
+two factor authentication (2FA) secret, credentials for game accounts, ban state,
+settings and variables from multiple worlds, to provide functionality to you.
+
+In this context, a world is a game server, but it may have unique characteristics.
+
+TMW Vault allows you to connect to worlds which may or may not be controlled by
+The Mana World Team. If you decide to use TMW Vault to connect to a world, it will
+share the variables scope and your Vault ID, but it will not share your email,
+password, or 2FA secret.
 
 Requesting your Vault account termination will grant us an authorization to also
-terminate any sub-account connected to the Vault on your behalf. The Vault does
-not share your personal data with other servers except for the data you
-explicitly grant them, however, it may allow the other servers to communicate with
-you.
+terminate any sub-account connected to the Vault on your behalf. Therefore, you do
+not need to send GDPR requests to each world you used TMW Vault to connect to.
 
 The data collected by TMW Vault is strictly used to identify, contact, or provide
 authentication functionality for you.
@@ -138,11 +142,18 @@ You do not need to create an account in order to use Limnoria. The data it
 collects, such as messages sent to it, serve to prevent abuse, and to protect
 other users from misusing the bot.
 
+Do note that anyone can bring an IRC bot, and we may, but are not required to
+keep track of these bots in our channels.
+
 ### Information our Game bots collects
+
+Any user may write a game bot and connect it to our game. Said bot may collect
+public data to provide its own functionality. We may, but are not required to
+keep track of these bots.
 
 Our game bots may collect public information shared with clients like your
 nickname, and the time you were online (via access list protocol). They may also
-collect other data to provide functionality.
+collect other data to provide functionality, such as access lists and sales.
 
 ### Information our game servers collect
 
