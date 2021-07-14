@@ -7,13 +7,13 @@ autoupdate:
   wiki: The_Mana_World:Privacy_Policy
 ---
 
-This is the general privacy policy for The Mana World Project ("we", "us"), along
+This is the general Privacy Policy for The Mana World Project ("we", "us"), along
 all its services, including websites, forums, wikis, repositories and game servers;
 Containing information regarding the types of information that is collected and
 recorded by us. If you have additional questions or require more information about
 our Privacy Policy, do not hesitate to contact us at legal@themanaworld.org
 
-This privacy policy does not extend to third party services we may host, such as
+This Privacy Policy does not extend to third party services we may host, such as
 guild websites; Please refer to their privacy policies instead.
 
 ## Consent
@@ -39,11 +39,11 @@ optionally exempt from some anti-flooding policies and being under our direct
 control in case of the need for assistance regarding their usage.
 
 Our services typically offer the users "accounts", which they may register provided
-your consent and acceptance of this privacy policy and our terms of use.
+your consent and acceptance of this Privacy Policy and our terms of use.
 
 Do note that some services like repositories, wikis and forums may collect data
 subject to the DMCA under an irrevocable license terms, such as the GNU General
-Public License version 2 or later. This privacy policy does not superseed nor
+Public License version 2 or later. This Privacy Policy does not superseed nor
 prevail over the license terms, except when required by law.
 
 ### Information TMW Forums collect
@@ -93,7 +93,7 @@ removed, which will prompt anonymization or pseudo-anonymization of your usernam
 When contributing, you grant us a special license described at the footer of the
 wiki website, or at the submission form. This license will cover the entirety of
 your contribution, including edit messages, and shall take precedence and priority
-over this privacy policy and the rights connected to it. The biography field is
+over this Privacy Policy and the rights connected to it. The biography field is
 also subject to this special license.
 
 Several actions on the wiki are logged and these logs are often kept public. You
@@ -258,7 +258,7 @@ to promptly remove such information from our records.
 
 ## Contacting Us
 
-For legal questions, such as regarding this privacy policy, please use
+For legal questions, such as regarding this Privacy Policy, please use
 legal@themanaworld.org
 
 For data requests, or to exercise a right which is not available on the interface,
