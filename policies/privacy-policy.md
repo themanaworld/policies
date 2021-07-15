@@ -271,3 +271,4 @@ data@themanaworld.org
 This Privacy Policy does not supersede the [Terms of Use](/tos) and is subject to
 it.
 
+Do note that we do not provide legal advise.
