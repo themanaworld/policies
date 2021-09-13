@@ -39,4 +39,5 @@ Available at https://policies.themanaworld.org/tsc
 - Please do not share your password with anyone. We are not responsible for account theft or similar types of scam. And try to use unique passwords for each account you create.
 - The rules are subject to change, a notice in game, on the forums and on IRC will be given every time there is a modification.
 - A ban on the account is a ban on the player/person unless otherwise specified. Any new or secondary accounts may be instantly banned for ban evasion upon recognition.
+- Failure to fulfill GM instructions may be deemed as rule breaking, in particular, AFK botting and/or multiboxing.
 - The Mana World is an entity of [SOFTWARE IN THE PUBLIC INTEREST, INC](https://www.spi-inc.org/corporate/certificate-of-incorporation/). and is subject to United States law. Anything illegal under the [U.S. Code](https://www.law.cornell.edu/uscode/text) is *de facto* illegal on The Mana World.
