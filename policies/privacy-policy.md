@@ -46,22 +46,23 @@ register provided the user's consent and acceptance of this Privacy Policy and
 our terms of use.
 
 Do note that some services like repositories, wikis and forums may collect data
-subject to the DMCA under an irrevocable license terms, such as the GNU General
-Public License version 2 or later. This Privacy Policy does not supersede nor
-prevail over the license terms, except when required by law.
+subject to irrevocable license terms, such as the GNU General Public License
+version 2 or later. This Privacy Policy does not supersede nor prevail over the
+license terms, except when required by law.
 
 ### Information that TMW Forums collect
 
 To create an account, you need to provide a username, email, and password
 (which will be stored in a hashed form). The forum uses standard TLS to protect
-your information from Man In The Middle (MITM) attacks.
+your information from Man In The Middle (MITM) attacks, and implements Perfect
+Forward Secrecy to protect past sessions against private key compromises.
 
 Creating an account will prompt the creation of defaults and storing of further
 personal data automatically, such as registration date and IP, logs on the actions
 performed within the forums, language, forum theme, timezone, date format, posting
 preferences, display options and team memberships. They are stored to provide you
 functionality, to improve and personalize user experience, to communicate
-with you, and to find and prevent fraud.
+with you, and to find and prevent abuse.
 
 When registering or posting to our forums, we may share your username, email and/or
 IP address with privacy-respecting third-parties in order to protect our website
@@ -74,9 +75,8 @@ signature or attachments to be shared with the public.
 
 The accounts created for the forums will be kept until termination, as defined by
 the Terms of Service. Personal data may be deleted upon request, however forum
-posts will be anonymized or pseudo- anonymized. Logs may be kept to protect the
-rights of the other users from the forum and the legit interests of the board
-administration, such as to find and prevent abuse or activity connected to abuse.
+posts will be anonymized or pseudo-anonymized. Logs may be kept to assist us in
+protecting other users from abusive behavior.
 
 If you sign up for a The Mana World Team membership, do note that a different agreement may apply
 to you.
@@ -102,8 +102,8 @@ also subject to this special license.
 
 Several actions on the wiki are logged and these logs are often kept public. You
 can see which logs are enabled in the Special pages. Several actions require a
-special team membership or wiki authority, which may be ruled by a different
-agreement than this one.
+special team membership or wiki authority, which may be subject to a different
+policy.
 
 ### Information that TMW Vault collects
 
@@ -118,11 +118,10 @@ The Mana World Team. If you decide to use TMW Vault to connect to a world, it wi
 share the variables scope and your Vault ID, but it will not share your email,
 password, or 2FA secret.
 
-Requesting your Vault account termination will grant us an authorization to also
-terminate any sub- account connected to the Vault on your behalf. Therefore, you do
-not need to send GDPR requests to each world you used TMW Vault to connect to. If
-you do not wish us to terminate such world accounts, disconnect them from the
-Vault before requesting termination.
+Requesting termination of your Vault account implies the termination of all
+connected sub-accounts and their related data. To avoid termination of a
+sub-account, you may disconnect it from your Vault account prior to requesting
+termination of your Vault account.
 
 The data collected by TMW Vault is strictly used to identify, contact, or provide
 authentication functionality for you.
@@ -143,7 +142,8 @@ contributions as it is a mostly irreversible process.
 
 Our IRC bot uses Limnoria. You may create accounts with it, which will collect
 usernames, passwords, hostmasks and settings. It provide its own controls for the
-personal data it collects, which should be available at Limnoria's documentation.
+personal data it collects, which should be available at
+[Limnoria's documentation](https://docs.limnoria.net/use/plugins/User.html).
 
 You do not need to create an account in order to use Limnoria. The data it
 collects, such as messages sent to it, serve to prevent abuse and to protect
@@ -214,7 +214,7 @@ data, such as the Internet Archive or our bots.
 ## Cookies
 
 Cookies are small files that a site or its service provider transfers to your
-computer’s hard drive through your Web browser (if you allow) that enables the
+computer's hard drive through your Web browser (if you allow) that enables the
 sites or service provider’s systems to recognize your browser and capture and
 remember certain information.
 
@@ -226,15 +226,11 @@ is being sent, or you can choose to turn off all cookies via your browser
 settings. Like most websites, if you turn your cookies off, some of our services
 may not function properly.
 
-You can also
-[opt out of all tracking](https://www.google.com/settings/ads/onweb#display_optout)
-for sites besides themanaworld.org.
-
 ## Your rights
 
 You have the right to request copies of your personal data.
 You have the right to request that we correct any information you believe is
-inaccurate.
+inaccurate, if your request is deemed reasonable.
 You have the right to request that we complete the information you believe
 is incomplete.
 You have the right to request that we erase your personal data, under certain
@@ -263,8 +259,8 @@ Information from children under the age of 13, nor provides service to them
 without parental guidance, supervision or authorization.
 
 If you think that your child provided this kind of information on our website, we
-strongly encourage you to contact us immediately and we will do our best efforts
-to promptly remove such information from our records.
+strongly encourage you to contact us immediately at data@themanaworld.org and we
+will do our best efforts to promptly remove such information from our records.
  
 ## Changes to this policy
 
@@ -273,12 +269,13 @@ forums and on IRC will be given every time there is a modification.
 
 ## Contacting Us
 
-For legal questions, such as regarding this Privacy Policy, please use
+For legal inquiries, such as pertaining to this Privacy Policy, please use
 legal@themanaworld.org
 
-For data requests, or to exercise a right which is not available on the interface,
-please use instead
+When otherwise unavailable in the user interface, you may contact us at
 data@themanaworld.org
+to request a copy or the removal of your personal data, to exercise your right to
+be forgotten, or to make requests under the GDPR act.
 
 This Privacy Policy does not supersede the [Terms of Use](/tos) and is subject to
 it.
