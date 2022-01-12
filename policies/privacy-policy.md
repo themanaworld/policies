@@ -10,7 +10,7 @@ autoupdate:
 # Privacy Policy
 
 This is the general Privacy Policy for The Mana World Project ("we", "us"), along
-all its services, including websites, forums, wikis, repositories and game servers;
+all its services, including websites, forums, wikis, repositories and game servers,
 Containing information regarding the types of information that is collected and
 recorded by us. If you have additional questions or require more information about
 our Privacy Policy, do not hesitate to contact us at legal@themanaworld.org
@@ -21,7 +21,7 @@ guild websites; Please refer to their privacy policies instead.
 ## Consent
 
 By using any of our services, you hereby consent to our Privacy Policy and agree
-to its terms.
+to its terms. By doing so, you become an "User".
 
 ## Information we collect
 
@@ -35,14 +35,15 @@ Some of our services which are used in conjunction with other service, such as I
 Bots used in conjunction with IRC, or game bots used in conjunction of the game,
 may further log timestamps for the last seen of nicknames or hold private
 messages for users. Typically, these will be using the same permission scopes
-which a regular user of the IRC Network and/or game would be have access to.
+which a normal user of the IRC Network and/or game would be have access to.
 Typically, these sub-services do not enjoy any additional data collection
 privileges apart from being optionally exempt from some anti-flooding policies and
 being under our direct control in case of the need for assistance regarding their
 usage.
 
-Our services typically offer the users "accounts", which they may register
-provided your consent and acceptance of this Privacy Policy and our terms of use.
+Our services typically offer the users "accounts", which any natural person may 
+register provided the user's consent and acceptance of this Privacy Policy and
+our terms of use.
 
 Do note that some services like repositories, wikis and forums may collect data
 subject to the DMCA under an irrevocable license terms, such as the GNU General
@@ -119,7 +120,9 @@ password, or 2FA secret.
 
 Requesting your Vault account termination will grant us an authorization to also
 terminate any sub-account connected to the Vault on your behalf. Therefore, you do
-not need to send GDPR requests to each world you used TMW Vault to connect to.
+not need to send GDPR requests to each world you used TMW Vault to connect to. If
+you do not wish us to terminate such world accounts, disconnect them from the
+Vault before requesting termination.
 
 The data collected by TMW Vault is strictly used to identify, contact, or provide
 authentication functionality for you.
@@ -130,7 +133,8 @@ The git repositories have their own privacy policies and terms of uses. When
 contributing to a The Mana World repository, you may be asked for the nickname
 and/or real name for attribution. This attribution will be added to the git
 history and cannot be removed. Rectification may be possible via the mailmap file,
-however, different git implementations may ignore this file.
+however, different git implementations may ignore this file, in which case the
+data cannot be rectified either.
 
 Therefore, please be mindful on how you want to be attributed for git
 contributions as it is a mostly irreversible process.
@@ -179,8 +183,8 @@ game client. Direct registration may lead your personal data to be saved without
 the use of modern encryption or security measures, therefore, it is strongly
 advised to use the vault instead. Accounts created with the vault use a token
 instead of a password to communicate with the game server, which provide better
-protection given its one-time nature. Do note all communication with the game
-server happens over plain HTTP.
+protection given its one-time nature. Do note most communications with the game
+server happens over plain TCP.
 
 Additionally, the game servers may or may not log chat, which is deleted within
 a week, and the game servers also log other actions such as trade logs for a few
@@ -258,6 +262,11 @@ without parental guidance, supervision or authorization.
 If you think that your child provided this kind of information on our website, we
 strongly encourage you to contact us immediately and we will do our best efforts
 to promptly remove such information from our records.
+
+## Changes to this policy
+
+We may change this policy at any time and for any reason. A notice in game, on the
+forums and on IRC will be given every time there is a modification.
 
 ## Contacting Us
 
