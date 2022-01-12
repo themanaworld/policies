@@ -187,7 +187,8 @@ the use of modern encryption or security measures, therefore, it is strongly
 advised to use the vault instead. Accounts created with the vault use a token
 instead of a password to communicate with the game server, which provide better
 protection given its one-time nature. Do note most communications with the game
-server happen over plain Transmission Control Protocol (TCP).
+server happen over plain Transmission Control Protocol (TCP), which isn't
+encrypted in transit.
 
 Additionally, the game servers may or may not log the chat, which is deleted within
 a week, and the game servers also log other actions such as trade logs for a few
