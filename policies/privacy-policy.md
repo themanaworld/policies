@@ -33,9 +33,9 @@ analyze trends, and to better administer and maintain our services.
 
 Some of our services which are used in conjunction with other service, such as IRC
 Bots used in conjunction with IRC, or game bots used in conjunction with the game,
-may further log timestamps for the last seen of nicknames or hold private
+may further log timestamps for the last sighting of nicknames or hold private
 messages for users. Typically, these will be using the same permission scopes
-which a normal user of the IRC Network and/or game would be have access to.
+which a normal user of the IRC Network and/or game would have access to.
 Typically, these sub-services do not enjoy any additional data collection
 privileges apart from being optionally exempt from some anti-flooding policies and
 being under our direct control in case of the need for assistance regarding their
