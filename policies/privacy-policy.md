@@ -281,4 +281,4 @@ be forgotten, or to make requests under the GDPR act.
 This Privacy Policy does not supersede the [Terms of Use](/tos) and is subject to
 it.
 
-Do note that we do not provide legal advise.
+Do note that we do not provide legal advice.
