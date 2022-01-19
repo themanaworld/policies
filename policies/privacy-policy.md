@@ -1,10 +1,10 @@
 ---
 name: Privacy Policy
 description: How we handle your data
-aliases: [privacy]
+aliases: [privacy, pp]
 
 autoupdate:
-  wiki: The_Mana_World:Privacy_Policy
+  wiki: The_Mana_World:Privacy_policy
 ---
 
 # Privacy Policy
