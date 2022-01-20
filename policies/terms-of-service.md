@@ -1,7 +1,7 @@
 ---
 name: Terms of Service
 description: Your agreement with The Mana World
-aliases: [terms, tos, toc, terms-of-use, terms-and-conditions]
+aliases: [terms, tos, toc, agreement, terms_of_use, terms_and_conditions]
 
 autoupdate:
   wiki: The_Mana_World:Terms_and_Conditions
@@ -10,9 +10,9 @@ autoupdate:
 # Terms of Service
 
 The present terms of service constitute the agreement between you and us, The Mana
-World, also referred as TMW or "we", and its team, also referred as TMWT, regarding
-the use of our services by you. Our services include, but are not limited to, game
-servers, IRC channels, forums and wiki.
+World, also referred as "TMW", "we", "team", "TMWT", "our" and "The Mana World Team",
+regarding the use of our services by you. Our services include, but are not
+limited to, game servers, IRC channels, forums and wiki.
 
 Keep in mind that we may provide links or even host third-party services, which
 will be subject to their own Terms of Use and Privacy Policy.
@@ -22,7 +22,7 @@ will be subject to their own Terms of Use and Privacy Policy.
 TMW retains the right to moderate communications within the services to the extent
 it sees fit. This includes the ability to restrict your access to our services.
 TMW may also take any additional steps it deem necessary in order to prevent
-abuse, always respecting your privacy as outlined in our policies.
+abuse, always respecting your privacy as outlined in our [Privacy Policy](https://policies.themanaworld.org/privacy-policy).
 
 All data collected and associated with the usage of The Mana World is held under the
 stewardship of The Mana World Team (TMWT), which shall abide to the project's [Constitution](https://policies.themanaworld.org/constitution).
@@ -38,12 +38,12 @@ rights to share.
 You agree to follow all the rules applicable to you, including but not limited to
 the [Game Rules](https://policies.themanaworld.org/rules). The Mana World may,
 but is not required to, monitor the use of our services to ensure the rules are
-being followed, always in compliance with the Privacy Policy.
+being followed, always in compliance with the [Privacy Policy](https://policies.themanaworld.org/privacy-policy).
 
 You also agree to not use our services in a way that could be disruptive to the
-other users, nor to engage in data theft, phishing attempts, DDoS attempts,
-and to not attempt to obtain undue advantage from any bugs or glitches which our
-services may have.
+other users, nor to engage in data theft, phishing attempts, identity theft, DDoS
+attempts, and to not attempt to obtain undue advantage from any bugs or glitches
+which our services may have.
 
 Shall you find a bug or glitch in our services which could have given you an undue
 advantage, you agree to report it as soon as you acquire knowledge of the bug,
@@ -70,7 +70,7 @@ You can find more information [here](https://forums.themanaworld.org/viewtopic.p
 ## NO WARRANTY
 
 The Mana World provides no warranties for the services, to the extend permitted by
-applicable law. Except when otherwise stated in writing, the copyright holders
+applicable law. Except when otherwise stated in writing, the copyright holders, TMW,
 and/or other parties provide the services "as is" without warranty of any kind,
 either expressed or implied, including, but not limited to, the implied warranties
 of merchantability and fitness for a particular purpose. The entire risk as to the
