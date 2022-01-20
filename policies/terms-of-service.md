@@ -30,10 +30,10 @@ stewardship of The Mana World Team (TMWT), which shall abide to the project's [C
 ## Your agreement
 
 You agree to not use our services to propagate any abusive, obscene, vulgar,
-slanderous, hateful, threatening, sexually-orientated or any other material that
-may violate any laws be it of your country, the country where "The Mana World" is
-hosted or International Law. You also agree to don't share material or content
-which is not owned by you, or which you do not have the rights to share.
+slanderous, hateful, threatening, racist, sexually-orientated or any other material that may violate any laws be it of your country, the country where
+"The Mana World" is hosted or International Law. You also agree to don't share
+material or content which is not owned by you, or which you do not have the
+rights to share.
 
 You agree to follow all the rules applicable to you, including but not limited to
 the [Game Rules](https://policies.themanaworld.org/rules). The Mana World may,
