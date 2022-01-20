@@ -98,7 +98,7 @@ This agreement shall remain in full force and effects until you request the
 termination of your account, with means provided by us or by email.
 
 We may also unilaterally terminate this agreement if you breach this, or any
-other, policy.
+other, policy; with or without prior warning.
 
 We, at our own discretion, may remove unused accounts to keep our systems clean
 and to better protect your privacy ("purge"). In this case, we will provide a
@@ -113,8 +113,9 @@ forums and on IRC will be given every time there is a modification.
 
 This agreement is governed by the laws of the New York State, United States of
 America. The parties shall endeavor to settle any dispute that arises by direct
-negotiation using Court House or emails, but shall it not result in a resolution
-of the dispute, it shall be resolved by a court in the New York State.
+negotiation using the [Court House sub-forum](https://forums.themanaworld.org/viewforum.php?f=20)
+or email, but shall it not result in a resolution of the dispute, it shall be
+resolved by a court in the New York State.
 
 If any of the provisions on this agreement are proven unenforceable or void for
 any reason, the remaining provisions shall remain in full force and effect, and
