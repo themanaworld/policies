@@ -9,7 +9,7 @@ autoupdate:
 
 # Privacy Policy
 
-This is the general Privacy Policy for The Mana World Project ("we", "us"), along
+This is the general Privacy Policy for The Mana World Project ("we", "us", "The Mana World", "TMW"), along
 all its services, including websites, forums, wikis, repositories and game servers,
 Containing information regarding the types of information that is collected and
 recorded by us. If you have additional questions or require more information about
@@ -68,10 +68,12 @@ When registering or posting to our forums, we may share your username, email and
 IP address with privacy-respecting third-parties in order to protect our website
 from spambots, such as Spamhaus or Stop Forum Spam. By registering, you consent to
 this sharing. The services we use may change at any time and without prior notice.
-However, you may request this information from us at any time you desire.
-
-You may optionally provide profile data such as contact information, birthday, avatars,
+However, you may request this information from us at any time you desire. You may 
+optionally provide profile data such as contact information, birthday, avatars,
 signature or attachments to be shared with the public.
+
+When accessing or using our forums, you are subject to the [forum privacy policy](https://forums.themanaworld.org/ucp.php?mode=privacy)
+in relation to phpBB software and phppBB's use of cookies.
 
 The accounts created for the forums will be kept until termination, as defined by
 the Terms of Service. Personal data may be deleted upon request, however forum
@@ -236,7 +238,7 @@ You have the right to request that we complete the information you believe
 is incomplete.
 You have the right to request that we erase your personal data, under certain
 conditions.
-You have the right to request that we restrict the processing of your personal 
+You have the right to request that we restrict the processing of your personal
 data, under certain conditions.
 You have the right to object to our processing of your personal data, under
 certain conditions.
