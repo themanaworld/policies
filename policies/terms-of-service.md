@@ -74,9 +74,10 @@ applicable law. Except when otherwise stated in writing, the copyright holders, 
 and/or other parties provide the services "as is" without warranty of any kind,
 either expressed or implied, including, but not limited to, the implied warranties
 of merchantability and fitness for a particular purpose. The entire risk as to the
-quality and performance of the programs offered by us is with you. Should the
+quality and performance of any programs offered by us is with you. Should the
 program prove defective, you assume the cost of all necessary servicing, repair or
-correction.
+correction. Furthermore, we make no guarantees regarding availability or
+operability of our services.
 
 On no event unless required by applicable law or agreed to in writing will any
 copyright holder, The Mana World Team, or any other party who modifies and/or 
@@ -111,7 +112,7 @@ forums and on IRC will be given every time there is a modification.
 
 ## Disputes, Governing Law and Severability
 
-This agreement is governed by the laws of the New York State, United States of
+This agreement is governed by the laws of the State of New York, United States of
 America. The parties shall endeavor to settle any dispute that arises by direct
 negotiation using the [Court House sub-forum](https://forums.themanaworld.org/viewforum.php?f=20)
 or email, but shall it not result in a resolution of the dispute, it shall be
