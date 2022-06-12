@@ -95,3 +95,5 @@ These groups are closely affiliated with TMWT and TMW as an organisation, but ar
   - [Game Masters](https://forums.themanaworld.org/memberlist.php?mode=group&g=973)
 - [The Mana World Advisers](https://forums.themanaworld.org/memberlist.php?mode=group&g=984)
   - [Advisers](https://forums.themanaworld.org/memberlist.php?mode=group&g=984)
+
+Note: You must be registered on Forums to see the member list.
