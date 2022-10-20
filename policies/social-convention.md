@@ -21,3 +21,4 @@ These guidelines can be used by any MMO game.
 - Try to talk to someone before you send them a trade request, they may not be interested.
 - Keep potentially dangerous personal information private. Posting private and personal information in the wrong location can have serious consequences. Divulging too much information could give people with bad intentions valuable knowledge.
 - Always try to report game bugs and cases of abuse from other players, in most cases you are doing a favour to the community.
+- Staff is volunteering their free time to the game, they're not full time employees and gain nothing out of it. Therefore, treat them with respect.

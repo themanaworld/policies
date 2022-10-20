@@ -15,6 +15,7 @@ autoupdate:
 - The purpose of the TMWT is to make or delegate decisions regarding the running of The Mana World (TMW).
 - There are different scopes under TMWT's authority in order to balance and separate the projects responsibility and management.
 - TMWT understands that all members are here to help each other fulfil the common vision of making a Open Source 2D MMORPG.
+- TMWT may keep subprojects not directly related to the goal but which provide support or shares the same meta universe as The Mana World.
 - Someone can hold part or all of a role and not be a TMWT member, but they need to have the required knowledge or experience to fulfill that role.
 - To become a TMWT member, you need to gain in membership in the one of the following categories of contributors; Game Master, Server Admin, or Developer and must be approved by a majority of TMWT.
 - In the event that no TMWT members remain, but roles are fulfilled by non-TMWT members, those members may assume TMWT title to fulfill TMWT's duties to the best of their ability.

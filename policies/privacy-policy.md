@@ -195,6 +195,10 @@ encrypted in transit.
 Additionally, the game servers may or may not log the chat, which is deleted within
 a week, and the game servers also log other actions such as trade logs for a few
 months. Other logs, such as authentication logs, are kept for longer.
+Chat log is hashed to SHA256 before being saved on Moubootaur Legends only.
+
+The logs and game data may be used in an anonymous way for analytical purposes,
+such as identifying trends, bugs, unused content and improve the game in overall.
 
 Do note that game staff is subject to a different agreement than this privacy
 policy, as most administrative or moderation actions are logged and made available
