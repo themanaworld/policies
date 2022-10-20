@@ -4,7 +4,7 @@ description: Rules observed in-game for Moubootaur games
 aliases: [mlrules, mlgame]
 
 autoupdate:
-  forums: {forum: 1, topic: 2922, post: 25061}
+  forums: {forum: 1, topic: 2922, post: 160413}
   wiki: Moubootaur_Legends:Rules
 ---
 
