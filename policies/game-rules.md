@@ -1,6 +1,6 @@
 ---
-name: Legacy/Evolved Game Rules
-description: Rules observed in-game for Legacy and Evolved games
+name: TMW Classic Game Rules
+description: Rules observed in-game for TMW Classic game
 aliases: [rules, game]
 
 autoupdate:
@@ -8,7 +8,7 @@ autoupdate:
   wiki: Game_Rules
 ---
 
-# Legacy/Evolved Game Rules
+# TMW Classic Game Rules
 
 ## 1. Do not AFK bot
 This means you are not allowed to perform any AFK (away from keyboard) activity, apart from standing idle.
