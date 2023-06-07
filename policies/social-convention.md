@@ -4,6 +4,7 @@ description: Guidelines for social interaction
 aliases: [TSC, ESC, social, convention, tmw-social-convention, evol-social-convention]
 
 autoupdate:
+  forums: {forum: 1, topic: 21628, post: 165038}
   wiki: TMW_Social_Convention
 ---
 
